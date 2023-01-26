@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+    <div class="actualBody">
+        <div class="player">
+            <div class="home"><h2>Home</h2></div>
+            <div class="guest"><h2>Guest</h2></div>
+        </div>
+        <div class="points">
+            <div class="homePoints">
+                <h3 id="home-points">0</h3>
+            </div>
+            <div class="guestPoints">
+                <h3 id="guest-points">0</h3>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <div class="homeButtons">
+                <button class="button" onclick="add1home()">+1</button>
+                <button class="button" onclick="add2home()">+2</button>
+                <button class="button" onclick="add3home()">+3</button>
+            </div>
+            <div class="guestButtons">
+                <button class="button" onclick="add1guest()">+1</button>
+                <button class="button" onclick="add2guest()">+2</button>
+                <button class="button" onclick="add3guest()">+3</button>
+            </div>
+        </div>
+        <div class="reset">
+            <button class="button" onclick="clearGame()">Clear Game</button>
+        </div>
+        <div class="history">
+            <div class="previousGames"><p>Last Game:</p></div>
+            <div class="previousScores"><p id="previous-scores"></p></div>
+        </div>
+    </div>
+</body>
+</html>

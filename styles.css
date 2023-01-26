@@ -1,0 +1,131 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actualBody{
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* background-image: url(./images/basketball.JPG); */
+}
+.player{
+    display: flex;
+    justify-content: space-evenly;
+}
+.home,
+.guest{
+    flex: 1;
+    text-align: center;
+}
+.home h2,
+.guest h2{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+.points{
+    display: flex;
+    justify-content: space-around;
+}
+.guestPoints,
+.homePoints{
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; 
+}
+.homePoints h3,
+.guestPoints h3{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: #F94F6D;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.homeButtons,
+.guestButtons{
+    width: 155px;
+    text-align: center;
+}
+.homeButtons button,
+.guestButtons button{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    background: #1B244A;
+    font-size: 20px; 
+}
+.button:hover{
+    background-color: #F94F6D;
+    color: black;
+}
+.homePoints h3,
+.guestPoints h3,
+.homeButtons button,
+.guestButtons button{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+.reset{
+    align-self: center;
+}
+.reset button{
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    background: #1B244A;
+    font-size: 20px; 
+}
+.history{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.history .previousGames p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    background: #1B244A;
+    min-width: 150px;
+    min-height: 26px;
+}
+.history .previousScores p{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #F94F6D;
+    background: #1B244A;
+    min-width: 150px;
+    min-height: 26px;
+    max-width: 575px;
+}
